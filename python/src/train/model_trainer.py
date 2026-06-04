@@ -14,15 +14,12 @@ from ..preprocessing import build_feature_tensor, split_dataset
 from ..train import train_one_epoch, evaluate, HParams
 from ..utils import (create_train_loader, create_eval_loader, resolve_device,
                      FeatureTensorDataset, prepare_unique_file, SupConLoss)
-from ..legacy_models import LiteratureBaseline_VGG16, LiteratureBaseline_DenseNet121, LiteratureBaseline_ResNet18
+
 
 
 MODEL_REGISTRY = {
     "simple_cnn": SimpleCNN,
     "asymmetric_trinet": AsymmetricTriNet,
-    "resnet_18": LiteratureBaseline_ResNet18,
-    "vgg_16": LiteratureBaseline_VGG16,
-    "densenet_121": LiteratureBaseline_DenseNet121,
 }
 
 

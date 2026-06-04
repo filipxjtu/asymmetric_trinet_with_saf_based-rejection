@@ -14,17 +14,11 @@ from python.src.utils import (
     prepare_unique_file
 )
 from python.src.models import AsymmetricTriNet, SimpleCNN
-from python.src.legacy_models import (LiteratureBaseline_ResNet18,
-                                      LiteratureBaseline_DenseNet121,
-                                      LiteratureBaseline_VGG16)
 
 # Register models locally for diagnostic loading
 MODEL_MAP = {
     "asymmetric_trinet": AsymmetricTriNet,
     "simple_cnn": SimpleCNN,
-    "vgg_16": LiteratureBaseline_VGG16,
-    "densenet121": LiteratureBaseline_DenseNet121,
-    "resnet18": LiteratureBaseline_ResNet18,
 }
 
 
